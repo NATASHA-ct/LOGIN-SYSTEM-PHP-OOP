@@ -1,3 +1,9 @@
+<?php
+// for user to see the page login
+  session_start();
+  
+?>
+
 <!DOCTYPE html>
 <html> 
 <head>
@@ -6,19 +12,43 @@
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+<header class="topnav">
+    <nav class="nav">
+        
+       <h3>SIMPLIFY</h3>
+       <ul id="menu-main">
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CURRENT SALES</a></li>
+                <li><a href="#">MEMBER+</a></li>
+        </ul>
+        
+        <ul class="menu-member">
+            <?php
 
-  <div class="container">
-    <img src="img/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-    
-    <div class="centered"><h1>WELCOME!</h1></div>
-  </div>
- 
-</div>
+            // IF LOGIN SHOW NAME OF USER
+             if(isset($_SESSION["userid"])){
+            ?>
+
+            <li><a href="#">Welcome <?php echo $_SESSION["useruid"]; ?></a></li>
+            <li><a href="includes/logout.inc.php" class="header-login-a">LogOut</a></li>
+            <?php
+             }
+             else
+             {
+            ?>
+            <li><a href="#">SIGNUP</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <?php
+             }
+            ?>
+        </ul>
+    </nav>
+</header>
+
+<section class="banner">
+  <h2 class="bheading">We have what you need !</h2>
+</section>
 
 <section class="index-login">
   <div class="wrapper">
@@ -29,7 +59,7 @@
         <input type="text" name="uid" placeholder="Username"><br>
         <input type="text" name="email" placeholder="E-mail"><br>
         <input type="password" name="pwd" placeholder="Password"><br>
-        <input type="password" name="pwdrepeat" placeholder="Repeat Password"><br>
+        <input type="password" name="pwdRepeat" placeholder="Repeat Password"><br>
         <br>
         <button type="submit" name="submit">SIGN UP</button><br>
       </form>

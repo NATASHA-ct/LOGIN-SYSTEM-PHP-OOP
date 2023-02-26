@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #ba82a1;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  #menu-main{
+    display: flex;
+    list-style: none;
+    color: aqua;
+  }
+  
+  .menu-member{
+     list-style: none;
+  }
+
+  .topnav a{
+    color: #c2caf1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.banner{
+    background-image: url(../assets/banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.bheading{
+    font-family: 'Dancing Script';
+    font-size: 4em;
+    font-weight: bold;
+    color: #ba82a1;
+    text-align: left;
+    margin: 0;
+    padding-left: 1em;
+    
+}
+
+.index-login{
+margin-top: 3em 5em;
+  }
+
+.wrapper{
+    display: flex;
+    text-align: left;
+    margin-bottom: 3em;
+    justify-content: space-evenly;
+}
+
+.index-login-login{
+    background-color: #e1ccdb;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.index-login-login input{
+    color: #13010b;
+    background-color: #9ac5f352;
+    margin-bottom: 0.4em;
+    border-radius: 8px;
+    padding: 6px;
+    border: none; 
+}
+
+
+.index-login-signup{
+  border-left: 4px solid rgb(230, 177, 215);
+  padding-left: 2em;
+}
+
+.index-login-signup input{
+    color: #13010b;
+    background-color: #9ac5f352;
+    margin-bottom: 0.4em;
+    border-radius: 8px;
+    padding: 6px;
+    border: none;  
+}
+
+button{
+    background-color: #88376bc7;
+    margin-bottom: 0.4em;
+    border-radius: 8px;
+    color: white;
+    border: none; 
+    padding: 6px 10px;
+}
