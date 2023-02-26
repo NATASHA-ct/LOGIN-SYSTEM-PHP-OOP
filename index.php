@@ -6,19 +6,41 @@
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+<header>
+    <nav>
+        <div>
+            <h3>NATASHA T</h3>
+            <ul class="menu-main">
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CURRENT SALES</a></li>
+                <li><a href="#">MEMBER+</a></li>
+            </ul>
+        </div>
+        <ul class="menu-member">
+            <?php
 
-  <div class="container">
-    <img src="img/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-    
-    <div class="centered"><h1>WELCOME!</h1></div>
-  </div>
- 
-</div>
+            // IF LOGIN SHOW NAME OF USER
+             if(isset($_SESSION["userid"])){
+            ?>
+
+            <li><a href="#"><?php echo $_SESSION["useruid"]; ?></a></li>
+            <li><a href="includes/logout.inc.php" class="header-login-a">LOGOUT</a></li>
+
+            
+            <?php
+             }
+             else
+             {
+            ?>
+            <li><a href="#">SIGNUP</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <?php
+             }
+            ?>
+        </ul>
+    </nav>
+</header>
 
 <section class="index-login">
   <div class="wrapper">
