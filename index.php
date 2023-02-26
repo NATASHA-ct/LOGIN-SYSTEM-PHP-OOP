@@ -1,3 +1,9 @@
+<?php
+// for user to see the page login
+  session_start();
+  
+?>
+
 <!DOCTYPE html>
 <html> 
 <head>
@@ -6,17 +12,17 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <div>
-            <h3>NATASHA T</h3>
-            <ul class="menu-main">
+<header class="topnav">
+    <nav class="nav">
+        
+       <h3>SIMPLIFY</h3>
+       <ul id="menu-main">
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">CURRENT SALES</a></li>
                 <li><a href="#">MEMBER+</a></li>
-            </ul>
-        </div>
+        </ul>
+        
         <ul class="menu-member">
             <?php
 
@@ -24,10 +30,8 @@
              if(isset($_SESSION["userid"])){
             ?>
 
-            <li><a href="#"><?php echo $_SESSION["useruid"]; ?></a></li>
-            <li><a href="includes/logout.inc.php" class="header-login-a">LOGOUT</a></li>
-
-            
+            <li><a href="#">Welcome <?php echo $_SESSION["useruid"]; ?></a></li>
+            <li><a href="includes/logout.inc.php" class="header-login-a">LogOut</a></li>
             <?php
              }
              else
@@ -41,6 +45,10 @@
         </ul>
     </nav>
 </header>
+
+<section class="banner">
+  <h2 class="bheading">We have what you need !</h2>
+</section>
 
 <section class="index-login">
   <div class="wrapper">
