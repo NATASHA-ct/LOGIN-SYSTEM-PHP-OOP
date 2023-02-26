@@ -29,7 +29,7 @@
         <input type="text" name="uid" placeholder="Username"><br>
         <input type="text" name="email" placeholder="E-mail"><br>
         <input type="password" name="pwd" placeholder="Password"><br>
-        <input type="password" name="pwdrepeat" placeholder="Repeat Password"><br>
+        <input type="password" name="pwdRepeat" placeholder="Repeat Password"><br>
         <br>
         <button type="submit" name="submit">SIGN UP</button><br>
       </form>

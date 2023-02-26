@@ -4,9 +4,9 @@
 
 class Dbh{
 
-    private function connect(){
+   protected function connect(){
         // error handling
-try {
+        try {
             $username = "root";
             $password = "";
             $dbh = new PDO('mysql:host=localhost;dbname=ooplogin', $username, $password);
