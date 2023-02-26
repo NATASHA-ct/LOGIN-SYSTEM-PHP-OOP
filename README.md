@@ -1,19 +1,13 @@
 # Login-and-Register-system-using-OOP
 
-Login and Register system created using OOP PHP
+Login and Register system created using OOP PHP-An object oriented authentication system gives a user the ability to register，log in, logout and includes features like validation, session saving, salt-hash-encrypted passwords, error handlers.
 
-
-
-    ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 - PHP
 - MySql
 - Css
-
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -26,13 +20,10 @@ Login and Register system created using OOP PHP
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo 
+![php login](https://user-images.githubusercontent.com/106079814/221407466-30dd6fc7-de31-4b1f-837f-23a102c354bc.jpg)
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -53,11 +44,12 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- 
+- https://github.com/NATASHA-ct/LOGIN-SYSTEM-PHP-OOP.git
 
-`You can download this OOP login and Register system as a ZIP and enter your database details in the dbh.classes.php file.
-
-`protected function connect(){
+ - You can download this OOP login and Register system as a ZIP and enter your database details in the dbh.classes.php file.
+ 
+```
+ protected function connect(){
         // error handling
         try {
             $username = "USERNAME GOES HERE";
@@ -68,39 +60,21 @@ Clone this repository to your desired folder:
             print "Error! ". $e->getMessage()."<br/>";
             die();
         }
+  
+```
 
-    }`
-
-
-
-### Deployment
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
+## 👥 Author
 👤 **NATASHA TATENDA CHIROMBE**
 
 - GitHub: [@NATASHA-ct]((https://github.com/NATASHA-ct)
 - Twitter: [@NatashaChirombe]
 - LinkedIn: [Natasha Chirombe](linkedin.com/in/natasha-chirombe-1531aa17b)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements">
 Dani Krossing(Tutor)
 </a>
-
 
 <!-- LICENSE -->
 
