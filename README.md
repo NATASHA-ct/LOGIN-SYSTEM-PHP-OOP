@@ -1,6 +1,6 @@
 # Login-and-Register-system-using-OOP
 
-Login and Register system created using OOP PHP-An object oriented authentication system gives a user the ability to register，log in, logout and includes features like validation, session saving, salt-hash-encrypted passwords, error handlers.
+Login and Register system created using OOP PHP. An object oriented authentication system gives a user the ability to register，log in, logout and includes features like validation, session saving, salt-hash-encrypted passwords, error handlers.
 
 
 ### Tech Stack <a name="tech-stack"></a>
